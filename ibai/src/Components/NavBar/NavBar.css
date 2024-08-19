@@ -1,0 +1,82 @@
+/* Estilo de NavBar */
+.navbar.bg-body-tertiary .container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar.bg-body-tertiary .container-fluid .navbar-brand .logo-text{
+    color: rgb(184, 182, 182);
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 28px;
+    margin-left: 10px;
+    
+}
+
+.navbar.bg-body-tertiary .container-fluid .navbar-brand .logo-text:hover {
+    color: #ff9900;
+}
+
+.navbar.bg-body-tertiary .container-fluid .navbar-brand .rounded-circle {
+    margin-top: -5px;
+}
+
+.navbar.bg-body-tertiary .navbar-collapse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar.bg-body-tertiary .navbar-collapse .navbar-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar.bg-body-tertiary .navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 50%;
+}
+.navbar.bg-body-tertiary .navbar-nav .nav-link {
+    text-align: center;
+    padding: 0 15px;
+}
+
+.navbar.bg-body-tertiary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #232F3E !important;
+    color: white;
+}
+.navbar.bg-body-tertiary:nth-child(2) .navbar-nav {
+    margin: 0 auto;
+}
+.navbar.bg-body-tertiary .d-flex {
+    display: flex;
+    justify-content: center;
+    width: 300%;
+}
+.navbar.bg-body-tertiary:nth-of-type(2) .navbar-nav .nav-link {
+    padding: 0 20px;
+}
+
+/* Estilos de los enlaces */
+.navbar.bg-body-tertiary .nav-link {
+    color: white;
+}
+.navbar.bg-body-tertiary .nav-link:hover {
+    color: #ff9900;
+}
+
+/* Estilo para el botón de búsqueda */
+.navbar.bg-body-tertiary .btn-outline-success {
+    color: #fff;
+    border-color: #ff9900;
+}
+.navbar.bg-body-tertiary .btn-outline-success:hover {
+    background-color: #ff9900;
+    border-color: #ff9900;
+}
