@@ -1,3 +1,4 @@
+import { CartWidget } from "../CartWidget/CartWidget";
 import "./NavBar.css";
 import {ImagesNavBar} from "./components/ImagesNavBar";
 
@@ -35,6 +36,9 @@ export const NavBar = () => {
                         </ul>
                     </span>
                 </div>
+                <a class="navbar-brand" href="#">
+                    <CartWidget/>
+                </a>
             </div>
         </nav>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
