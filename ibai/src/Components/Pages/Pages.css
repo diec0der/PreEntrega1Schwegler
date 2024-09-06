@@ -1,0 +1,41 @@
+.page h1 {
+    font-size: 36px;
+    font-family: helvetica;
+    font-weight: bold;
+    color: #232F3E;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 30px;
+    position: relative;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-form input[type="search"] {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.search-form button {
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-form button:hover {
+    background-color: #e68a00;
+}

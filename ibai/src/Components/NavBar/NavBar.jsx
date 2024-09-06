@@ -1,62 +1,62 @@
 import { CartWidget } from "../CartWidget/CartWidget";
 import "./NavBar.css";
 import {ImagesNavBar} from "./components/ImagesNavBar";
+// import SearchBar from "../SearchBar/SearchBar";
+import { Link } from "react-router-dom";
 
-export const NavBar = () => {
-    return <>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+export const NavBar = ({ enSubmit }) => {
+    return (
+        <>
+            <nav className="navbar navbar-expand-lg bg-body-tertiary">
+                <div className="container-fluid">
                     <ImagesNavBar/>
-                    <span class="logo-text">ibai</span>
-                </a>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <span class="navbar-top">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Inicio</a>
-                            </li>
-                        </ul>
-                        <form class="d-flex search-form" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Buscar productos..." aria-label="Search"></input>
-                            <button class="btn btn-outline-success" type="submit">Buscar</button>
-                        </form>
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Contactanos
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Soporte y FAQ</a></li>
-                                    <li><a class="dropdown-item" href="#">Formulario de Contacto</a></li>
-                                    <li><hr class="dropdown-divider"></hr></li>
-                                    <li><a class="dropdown-item" href="#">Canales de Comunicación</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </span>
-                </div>
-                <a class="navbar-brand" href="#">
+                    <Link className="navbar-brand" to="/">
+                        <span className="logo-text">ibai</span>
+                    </Link>
+                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                        <span className="navbar-top">
+                            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li className="nav-item">
+                                    <Link to="/" className="nav-link">Inicio</Link>
+                                </li>
+                            </ul>
+                            {/* <SearchBar enSubmit={enSubmit} /> comentado porque ahora está en ofertas  */}
+                            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li className="nav-item dropdown">
+                                    <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Contactanos
+                                    </a>
+                                    <ul className="dropdown-menu">
+                                        <li><Link to="/SoporteYFAQ" className="dropdown-item">Soporte y FAQ</Link></li>
+                                        <li><Link to="/ContactForm" className="dropdown-item">Formulario de Contacto</Link></li>
+                                        <li><hr className="dropdown-divider"></hr></li>
+                                        <li><Link to="/Canales" className="dropdown-item">Canales de Comunicación</Link></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </span>
+                    </div>
                     <CartWidget/>
-                </a>
-            </div>
-        </nav>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link" href="#">Ofertas</a>
-                        <a class="nav-link" href="#">Tecnología</a>
-                        <a class="nav-link" href="#">Moda</a>
-                        <a class="nav-link" href="#">Deportes</a>
-                        <a class="nav-link" href="#">Salud y Belleza</a>
-                        <a class="nav-link" href="#">Hogar y Jardín</a>
+                    <a className="navbar-brand" href="#">
+                    </a>
+                </div>
+            </nav>
+            <nav className="navbar navbar-expand-lg bg-body-tertiary">
+                <div className="container-fluid">
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+                    <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div className="navbar-nav">
+                            <Link to="/Tecnologia" className="nav-link" >Tecnología</Link>
+                            <Link to="/Moda" className="nav-link" >Moda</Link>
+                            <Link to="/Deportes" className="nav-link">Deportes</Link>
+                            <Link to="/SaludYBelleza" className="nav-link">Salud y Belleza</Link>
+                            <Link to="/HogarYJardin" className="nav-link">Hogar y Jardín</Link>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </nav>
-    </>
+            </nav>
+        </>
+    );
 };
