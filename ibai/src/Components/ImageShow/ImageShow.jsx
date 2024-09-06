@@ -1,5 +1,6 @@
 import React from "react";
 import "./ImageShow.css";
+import {Link} from "react-router-dom"
 
 function ImageShow ({image}) {
     return (
@@ -13,6 +14,7 @@ function ImageShow ({image}) {
                 <p className="image-detalle">{image.alt_description || "Sin detalles"}</p>
                 <p className="image-precio">Precio: ${image.likes * 10}</p>
                 <a href="#" className="btn-comprar">Comprar</a>
+                <Link to={`/Producto/${image.id}`} className="btn-vermas">Ver más</Link>
             </div>
         </div>
     );

@@ -13,6 +13,7 @@ import HogarYJardin from "./Components/Pages/HogarYJardin";
 import Canales from "./Components/Pages/Canales";
 import SoporteYFAQ from "./Components/Pages/SoporteYFAQ";
 import ContactForm from "./Components/Pages/Contacto";
+import Producto from "./Components/Pages/Producto";
 import Error from "./Components/Pages/Error";
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
                     <Route path="/Deportes" element={<Deportes onSearch={handleSubmit} img={img} />} />
                     <Route path="/SaludYBelleza" element={<SaludYBelleza onSearch={handleSubmit} img={img} />} />
                     <Route path="/HogarYJardin" element={<HogarYJardin onSearch={handleSubmit} img={img} />} />
+                    <Route path="/Producto/:id" element={<Producto />} />
                     <Route path="/Canales" element={<Canales />} />
                     <Route path="/SoporteYFAQ" element={<SoporteYFAQ />} />
                     <Route path="/ContactForm" element={<ContactForm />} />
