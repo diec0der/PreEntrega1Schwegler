@@ -17,7 +17,7 @@ export const NavBar = ({ enSubmit }) => {
                         <span className="navbar-top">
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li className="nav-item">
-                                    <Link to="/" className="nav-link">Inicio</Link>
+                                    <Link to="/" className="nav-link">Buscar</Link>
                                 </li>
                             </ul>
                             {/* <SearchBar enSubmit={enSubmit} /> comentado porque ahora está en ofertas  */}

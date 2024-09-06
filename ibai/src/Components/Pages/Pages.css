@@ -1,12 +1,29 @@
 .page h1 {
-    font-size: 36px;
+    font-size: 48px;
     font-family: helvetica;
     font-weight: bold;
     color: #232F3E;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 30px;
+    margin-top: 40px;
     position: relative;
+}
+
+.page .error-text {
+    font-size: 26px;
+    color: #232F3E;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.bi-cone-striped {
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    display: flex;
+    font-size: 100px;
+    color: #ff9900;
 }
 
 .search-form {

@@ -1,11 +1,10 @@
-import { BiErrorAlt } from "react-icons/bi";
-
+import "./Pages.css";
 function Error () { 
     return (
-        <div>
+        <div className="page">
             <h1>Error 404</h1>
-            <p>La página solicitada no existe o está en desarrollo</p>
-            <BiErrorAlt size={100} />
+            <p className = "error-text">La página solicitada no existe o está en desarrollo</p>
+            <i class="bi bi-cone-striped"></i>
         </div>
     )
 }
