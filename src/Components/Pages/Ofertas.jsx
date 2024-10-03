@@ -26,7 +26,7 @@ function Ofertas({ img, onSearch }) {
             {img.length > 0 ? (
                 <ImageList images={img} />
             ) : (
-                <p className="error-text2">Cargando...</p>
+                <p className="error-text2">Producto no encontrado, pruebe con otra búsqueda por favor...</p>
             )}
         </div>
     );

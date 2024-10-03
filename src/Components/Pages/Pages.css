@@ -136,22 +136,6 @@
     margin-top: 20px;
 }
 
-.page .add-to-cart-button {
-    background-color: #ff9900;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
-
-.page .add-to-cart-button:hover {
-    background-color: #9b5d00;
-}
-
 .page .back-button {
     background-color: #232F3E;
     color: white;
@@ -167,4 +151,68 @@
 
 .page .back-button:hover {
     background-color: #141c23;
+}
+
+.add-to-cart-button {
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    text-decoration: none !important;
+}
+
+.add-to-cart-button:hover {
+    background-color: #e68a00;
+}
+
+
+.back-button {
+    background-color: #232F3E;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #141c23;
+}
+
+.spinner-container-prod {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.custom-spinner-prod {
+    color: #ff9900 !important;
+}
+
+.add-to-cart-button-term {
+    background-color: #ff9900;
+    text-decoration: none;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    text-decoration: none !important;
+}
+
+.add-to-cart-button-term:hover {
+    background-color: #e68a00;
 }

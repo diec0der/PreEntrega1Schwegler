@@ -8,12 +8,10 @@ export const CartWidget = () => {
 
     const totalItems = cart.reduce((acc, item) => acc + item.quantity, 0);
 
-    if (totalItems === 0) return null;
-
     return (
         <span className="carrito">
             <Link className="nav-link" to="/cart">
-                <i className="bi bi-cart3" /> {totalItems} ítems
+                <i className="bi bi-cart3" /> {`${totalItems}`}
             </Link>
         </span>
     );

@@ -1,0 +1,60 @@
+.item-count {
+    display: flex;
+    justify-content: center;
+    align-items:baseline;
+    gap: 10px;
+}
+
+.item-count button {
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-count button:hover {
+    background-color: #e68a00;
+}
+
+.item-count input {
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+.add-to-cart-button {
+    background-color: #232F3E !important;
+    color: white;
+    border: none;
+    padding: 18px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    height: 40px;
+    width: auto;
+    min-width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    text-decoration: none !important;
+}
+
+.add-to-cart-button:hover {
+    background-color: #101923 !important;
+}

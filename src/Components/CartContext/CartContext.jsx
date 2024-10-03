@@ -8,10 +8,14 @@ export const CartProvider = ({ children }) => {
     const [cart, setCart] = useState([]);
 
     const addItem = (item, quantity) => {
+
+        if (!item || !item.id || !item.price) {
+            return;
+        }
+
         if (isInCart(item.id)) {
-            const updatedCart = cart.map(prod => prod.id === item.id 
-                ? { ...prod, quantity: prod.quantity + quantity }
-                : prod
+            const updatedCart = cart.map(prod => 
+                prod.id === item.id ? { ...prod, quantity: prod.quantity + quantity } : prod
             );
             setCart(updatedCart);
         } else {
