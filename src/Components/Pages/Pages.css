@@ -216,3 +216,248 @@
 .add-to-cart-button-term:hover {
     background-color: #e68a00;
 }
+
+.faq-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Helvetica', sans-serif;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #232F3E;
+    margin-bottom: 30px;
+}
+
+.faq-section {
+    margin-bottom: 40px;
+}
+
+.faq-section h2 {
+    font-size: 28px;
+    color: #ff9900;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h3 {
+    font-size: 22px;
+    color: #232F3E;
+}
+
+.faq-item p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.support-section {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.support-section h2 {
+    font-size: 28px;
+    color: #ff9900;
+    margin-bottom: 20px;
+}
+
+.support-section p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.support-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.support-section ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.support-section ul li a {
+    color: #ff9900;
+    text-decoration: none;
+}
+
+.support-section ul li a:hover {
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 20px;
+    color: #232F3E;
+    margin-top: 30px;
+}
+
+.support-section p {
+    margin: 5px 0;
+}
+
+.form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #232F3E;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #232F3E;
+}
+
+.form-group input, 
+.form-group textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    width: 100%;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    outline: none;
+    border-color: #ff9900;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.submit-button {
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-end;
+}
+
+.submit-button:hover {
+    background-color: #e68a00;
+}
+
+.thank-you-message {
+    text-align: center;
+    color: #232F3E;
+}
+
+.canales-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Helvetica', sans-serif;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #232F3E;
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.canales-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.canal-item {
+    flex: 1;
+    min-width: 280px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.canal-item h2 {
+    font-size: 24px;
+    color: #ff9900;
+    margin-bottom: 15px;
+}
+
+.canal-item a {
+    color: #ff9900;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.canal-item a:hover {
+    text-decoration: underline;
+}
+
+.social-media-list {
+    list-style: none;
+    padding: 0;
+}
+
+.social-media-list li {
+    margin-bottom: 10px;
+}
+
+.social-media-list a {
+    color: #232F3E;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.social-media-list a:hover {
+    color: #ff9900;
+}
+
+.chat-info {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: center;
+}

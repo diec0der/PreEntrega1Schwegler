@@ -40,9 +40,9 @@ const Footer = () => {
             <div className="footer-bottom">
                 <p>&copy; 2024 ibai. Todos los derechos reservados.</p>
                 <div className="social-media">
-                    <a href="#"><i className="bi bi-facebook"></i></a>
-                    <a href="#"><i className="bi bi-twitter"></i></a>
-                    <a href="#"><i className="bi bi-instagram"></i></a>
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i className="bi bi-facebook"></i></a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i className="bi bi-twitter"></i></a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i className="bi bi-instagram"></i></a>
                 </div>
             </div>
         </footer>

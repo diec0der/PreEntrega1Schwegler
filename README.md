@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# IBAI Shop - React E-commerce Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+IBAI es una aplicación de e-commerce creada con React. La aplicación permite a los usuarios explorar productos en varias categorías, agregarlos al carrito, realizar compras y contactarse a través de varios canales de soporte.
 
-## Available Scripts
+## Características
 
-In the project directory, you can run:
+- **Carrito de Compras**: Los usuarios pueden agregar productos al carrito, actualizar la cantidad y eliminar productos.
+- **Compra Segura**: El sistema genera una orden con un ID único y actualiza el stock de productos después de la compra.
+- **Formulario de Contacto**: Los usuarios pueden enviar mensajes a través del formulario de contacto, proporcionando su nombre, email, y un mensaje.
+- **Preguntas Frecuentes (FAQ)**: Una sección con preguntas frecuentes para ayudar a los usuarios a resolver problemas comunes.
+- **Soporte en Tiempo Real**: Canales de comunicación, incluyendo email, teléfono, redes sociales y un chat en vivo.
 
-### `npm start`
+## Instalación
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Requisitos
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Asegúrate de tener instalado:
 
-### `npm test`
+- Node.js
+- npm o yarn
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Pasos para la instalación
 
-### `npm run build`
+1. Clona el repositorio:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   git clone https://github.com/tu-usuario/ibai-shop.git
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Uso
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Navegación
 
-### `npm run eject`
+	•La aplicación cuenta con varias páginas como Inicio, Categorías, Carrito, Formulario de Contacto, Soporte y FAQ.
+	•Los usuarios pueden navegar entre las diferentes categorías de productos y usar la barra de búsqueda para encontrar productos específicos.
+	•Una vez que los usuarios han agregado productos al carrito, pueden proceder a la compra y ver el resumen de su pedido.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Compra de Productos
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+	1.Agrega productos al carrito desde las páginas de categorías o desde el detalle del producto.
+	2.En el carrito, ajusta las cantidades y completa la información del comprador.
+	3.Presiona “Terminar compra” para completar el pedido. Se generará un ID de la orden y el stock de los productos se actualizará.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Formulario de Contacto
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Los usuarios pueden enviar sus consultas a través del formulario de contacto proporcionando su nombre, email y un mensaje.
 
-## Learn More
+Estructura del Proyecto
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+El proyecto está dividido en varios componentes de React, que incluyen:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+	•App.js: Componente principal que organiza las rutas y la estructura de la aplicación.
+	•NavBar: Componente para la barra de navegación superior.
+	•Cart: Componente del carrito de compras, donde los usuarios pueden gestionar sus productos.
+	•SoporteYFAQ: Página con las preguntas frecuentes y los canales de soporte.
+	•ContactForm: Página con el formulario de contacto.
+	•Canales: Página que describe los canales de comunicación disponibles.
 
-### Code Splitting
+Dependencias
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+	•React - Biblioteca para crear interfaces de usuario.
+	•Firebase - Plataforma de desarrollo de aplicaciones, usada para la autenticación y base de datos.
+	•React Bootstrap - Componentes de interfaz de usuario reutilizables basados en Bootstrap.
 
-### Analyzing the Bundle Size
+Scripts Disponibles
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+En el directorio del proyecto, puedes ejecutar los siguientes comandos:
 
-### Making a Progressive Web App
+npm start o yarn start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Ejecuta la aplicación en modo de desarrollo.
+Abre http://localhost:3000 para verlo en el navegador.
 
-### Advanced Configuration
+npm run build o yarn build
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Compila la aplicación para producción en el directorio build.
+Agrupa React en modo de producción y optimiza la construcción para un mejor rendimiento.
 
-### Deployment
+npm test o yarn test
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Inicia el corredor de pruebas en el modo interactivo.
 
-### `npm run build` fails to minify
+Licencia
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Este proyecto está licenciado bajo la Licencia MIT - consulta el archivo LICENSE para más detalles.
