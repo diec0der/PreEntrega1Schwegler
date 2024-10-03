@@ -7,7 +7,7 @@ function HogarYJardin({ img }) {
     const { onSearch } = useOutletContext(); 
 
     useEffect(() => {
-        onSearch("home and garden"); 
+        onSearch("hogar y jardin"); 
     }, [onSearch]);
 
     return (

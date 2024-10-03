@@ -7,7 +7,7 @@ function SaludYBelleza({ img }) {
     const { onSearch } = useOutletContext(); 
 
     useEffect(() => {
-        onSearch("healty and beauty"); 
+        onSearch("salud y belleza"); 
     }, [onSearch]);
 
     return (

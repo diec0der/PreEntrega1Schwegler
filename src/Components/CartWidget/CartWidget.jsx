@@ -1,9 +1,20 @@
-import "./CartWidget.css"
-import { Link } from "react-router-dom";
+import React from 'react';
+import { useCart } from '../CartContext/CartContext';
+import { Link } from 'react-router-dom';
+import "./CartWidget.css";
 
 export const CartWidget = () => {
-    return <span className="carrito">
-        <Link className= "nav-link" to="*">
-        <i className="bi bi-cart3"/> Carrito</Link>
-    </span>
+    const { cart } = useCart();
+
+    const totalItems = cart.reduce((acc, item) => acc + item.quantity, 0);
+
+    if (totalItems === 0) return null;
+
+    return (
+        <span className="carrito">
+            <Link className="nav-link" to="/cart">
+                <i className="bi bi-cart3" /> {totalItems} ítems
+            </Link>
+        </span>
+    );
 };

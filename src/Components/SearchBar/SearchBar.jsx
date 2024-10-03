@@ -10,6 +10,7 @@ function SearchBar ({enSubmit}) {
 
     function handleChange (event) {
         setTerm(event.target.value);
+        console.log("Término de búsqueda: ", event.target.value);
     }
 
     return (

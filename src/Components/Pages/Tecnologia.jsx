@@ -7,7 +7,7 @@ function Tecnologia({ img }) {
     const { onSearch } = useOutletContext();
 
     useEffect(() => {
-        onSearch("technology elements");
+        onSearch("tecnología");
     }, [onSearch]);
 
     return (

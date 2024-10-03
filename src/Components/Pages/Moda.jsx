@@ -7,7 +7,7 @@ function Moda({ img }) {
     const { onSearch } = useOutletContext(); 
 
     useEffect(() => {
-        onSearch("clothes"); 
+        onSearch("moda"); 
     }, [onSearch]);
 
     return (

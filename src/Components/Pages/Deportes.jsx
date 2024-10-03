@@ -7,7 +7,7 @@ function Deportes({ img }) {
     const { onSearch } = useOutletContext(); 
 
     useEffect(() => {
-        onSearch("sports"); 
+        onSearch("deportes");
     }, [onSearch]);
 
     return (
