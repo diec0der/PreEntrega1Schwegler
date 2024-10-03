@@ -30,7 +30,7 @@ const searchByDescription = async (term) => {
     querySnapshot.forEach((doc) => {
         const data = doc.data();
         if (data.descripcion) {
-            const normalizedDescription = removeAccents(data.descripcion.toLowerCase()); // Normaliza la descripción
+            const normalizedDescription = removeAccents(data.descripcion.toLowerCase());
             if (normalizedDescription.includes(normalizedTerm)) {
                 results.push({ id: doc.id, ...data });
             }

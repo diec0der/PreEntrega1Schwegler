@@ -1,7 +1,6 @@
 import { CartWidget } from "../CartWidget/CartWidget";
 import "./NavBar.css";
 import {ImagesNavBar} from "./components/ImagesNavBar";
-// import SearchBar from "../SearchBar/SearchBar";
 import { Link } from "react-router-dom";
 
 export const NavBar = ({ enSubmit }) => {
@@ -20,7 +19,6 @@ export const NavBar = ({ enSubmit }) => {
                                     <Link to="/" className="nav-link">Buscar</Link>
                                 </li>
                             </ul>
-                            {/* <SearchBar enSubmit={enSubmit} /> comentado porque ahora está en ofertas  */}
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li className="nav-item dropdown">
                                     <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

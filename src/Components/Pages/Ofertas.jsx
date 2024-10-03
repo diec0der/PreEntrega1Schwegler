@@ -12,7 +12,7 @@ function Ofertas({ img, onSearch }) {
     useEffect(() => {
         const fetchStockProducts = async () => {
             const saleProducts = await getStockProducts();
-            onSearch(""); // 
+            onSearch("");
         };
 
         fetchStockProducts();

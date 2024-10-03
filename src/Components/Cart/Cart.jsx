@@ -3,15 +3,14 @@ import { useCart } from '../CartContext/CartContext';
 import { Link } from 'react-router-dom';
 import './Cart.css';
 import { createOrder, updateStock } from '../../api';
-import Spinner from 'react-bootstrap/Spinner';  // Asegúrate de tener bootstrap instalado
+import Spinner from 'react-bootstrap/Spinner';
 
 const Cart = () => {
     const { cart, removeItem, clear } = useCart();
     const [purchaseCompleted, setPurchaseCompleted] = useState(false);
     const [orderId, setOrderId] = useState(null);
-    const [loading, setLoading] = useState(false);  // Estado para manejar el spinner
+    const [loading, setLoading] = useState(false); 
 
-    // Estado para los datos del comprador
     const [buyer, setBuyer] = useState({
         name: '',
         phone: '',
@@ -22,7 +21,7 @@ const Cart = () => {
         const { name, value } = e.target;
         setBuyer({
             ...buyer,
-            [name]: value  // Actualizar los campos de nombre, teléfono o correo electrónico
+            [name]: value 
         });
     };
 
@@ -32,9 +31,8 @@ const Cart = () => {
             return;
         }
 
-        setLoading(true);  // Iniciar el spinner al hacer clic en "Terminar compra"
+        setLoading(true);
 
-        // Crear el objeto de la orden
         const order = {
             buyer,
             items: cart.map(item => ({
@@ -48,20 +46,17 @@ const Cart = () => {
         };
 
         try {
-            // 1. Crear la orden en Firestore
             const id = await createOrder(order);
             setOrderId(id);
 
-            // 2. Actualizar el stock de los productos
             await updateStock(order.items);
 
-            // 3. Limpiar el carrito y mostrar mensaje de compra completada
             clear();
             setPurchaseCompleted(true);
         } catch (error) {
             console.error("Error durante la compra: ", error);
         } finally {
-            setLoading(false);  // Detener el spinner una vez completada la operación
+            setLoading(false);
         }
     };
 
@@ -114,7 +109,6 @@ const Cart = () => {
             ))}
             <div className="cart-total">Total: ${total}</div>
 
-            {/* Formulario de datos del comprador */}
             <div className="buyer-info-form">
                 <h3>Datos del comprador</h3>
                 <form>
